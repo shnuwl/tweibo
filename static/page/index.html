@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" type="image/ico" href="/static/favicon.ico">
+<!-- <script src="http://mbostock.github.com/d3/d3.v2.js?2.9.1"></script> -->
+<script src="/static/js/jquery-1.8.3.min.js"></script>
+<script src="/static/js/d3.v3.js"></script>
+<!-- <script src="/static/js/bootstrap.min.js"></script> -->
+<script src="/static/js/graph.js"></script>
+<style>
+
+
+.link_error{
+    stroke:red;
+    stroke-linejoin:bevel;
+}
+.link {
+/*  fill: none;
+  stroke: #bbb;*/
+  fill: none;
+  stroke: #666;
+  stroke-width: 1.5px;
+}
+.texts {
+    width:200px;
+    font: 20px sans-serif;
+    text-decoration:underline;
+    word-break:break-all;
+    color:#FF0000;
+    font-weight: bold;
+    
+}
+.nodetext {
+
+    font: 12px sans-serif;
+    -webkit-user-select:none;
+    -moze-user-select:none;
+    stroke-linejoin:bevel;
+    
+}
+
+#container{
+    width:1200px;
+    height:600px;
+    border:1px solid green;
+    border-radius:5px;
+    position:relative;
+    margin:20px;
+}
+</style>
+<title>用户关系图</title>
+</head>
+    <body>
+    <h3>
+        请输入用户Uid
+    </h3>
+        <input type="button" onclick="getData();"value=腾讯 />
+        <input type="text" id="tencentUid" value="">高晓松:gxiaosong 马云：tncmayun
+        <div id='container'></div>
+    </body>
+    
+</html>
